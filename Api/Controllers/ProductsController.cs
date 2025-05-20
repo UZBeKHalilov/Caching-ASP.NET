@@ -34,9 +34,15 @@ namespace Api.Controllers
 
             if (cached != null)
             {
-
-                var products = System.Text.Json.JsonSerializer.Deserialize<List<Product>>(cached);
-                return products;
+                try
+                {
+                    var products = System.Text.Json.JsonSerializer.Deserialize<List<Product>>(cached);
+                    return products;
+                }
+                catch (System.Text.Json.JsonException ex)
+                {
+                    Console.WriteLine($"Error deserializing cached data: {ex.Message}");
+                }
             }
 
 
@@ -78,9 +84,47 @@ namespace Api.Controllers
             return dbProduct;
         }
 
+        // GET: api/Products/search?query=abc
+        [HttpGet("search")]
+        public async Task<ActionResult<IEnumerable<Product>>> SearchProducts([FromQuery] string query)
+        {
+            if (string.IsNullOrWhiteSpace(query))
+            {
+                return BadRequest("Query parameter is required.");
+            }
+
+            string cacheKey = $"products_search_{query.ToLowerInvariant()}";
+
+            var cached = await _demoService.GetMemoryCachedDataAsync(cacheKey);
+            Console.WriteLine($"Cache Key: {cacheKey} | cached : {cached}");
+            if (cached != null)
+            {
+                try
+                {
+                    var products = System.Text.Json.JsonSerializer.Deserialize<List<Product>>(cached);
+                    return products;
+                }
+                catch (Exception ex) 
+                {
+
+                   Console.WriteLine($"Error deserializing cached data: {ex.Message}");
+                }
+            }
+
+            var productsFromDb = await _context.Products
+                .Where(p => p.Name.Contains(query))
+                .ToListAsync();
+
+            var serialized = System.Text.Json.JsonSerializer.Serialize(productsFromDb);
+            await _demoService.SaveDataWithWriteThroughAsync(cacheKey, serialized);
+
+            return productsFromDb;
+        }
+
+
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-            [HttpPut("{id}")]
+        [HttpPut("{id}")]
             public async Task<IActionResult> PutProduct(int id, Product product)
             {
                 if (id != product.Id)
@@ -167,6 +211,6 @@ namespace Api.Controllers
         private bool ProductExists(int id)
         {
             return _context.Products.Any(e => e.Id == id);
-        }
+        }   
     }
 }

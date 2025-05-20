@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7A850AA8-D875-4069-891D-99C1F40EC54E}|Api\\Api.csproj|c:\\users\\abdulloh\\desktop\\github\\caching-asp.net\\api\\services\\demoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A850AA8-D875-4069-891D-99C1F40EC54E}|Api\\Api.csproj|solutionrelative:api\\services\\demoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7A850AA8-D875-4069-891D-99C1F40EC54E}|Api\\Api.csproj|c:\\users\\abdulloh\\desktop\\github\\caching-asp.net\\api\\services\\externalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7A850AA8-D875-4069-891D-99C1F40EC54E}|Api\\Api.csproj|solutionrelative:api\\services\\externalservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7A850AA8-D875-4069-891D-99C1F40EC54E}|Api\\Api.csproj|c:\\users\\abdulloh\\desktop\\github\\caching-asp.net\\api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7A850AA8-D875-4069-891D-99C1F40EC54E}|Api\\Api.csproj|solutionrelative:api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,15 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\Api\\Program.cs",
               "RelativeDocumentMoniker": "Api\\Program.cs",
@@ -35,38 +39,47 @@
               "ViewState": "AgIAABMAAAAgMzMzM7MiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T11:23:44.224Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DemoService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\Api\\Services\\DemoService.cs",
+              "RelativeDocumentMoniker": "Api\\Services\\DemoService.cs",
+              "ToolTip": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\Api\\Services\\DemoService.cs",
+              "RelativeToolTip": "Api\\Services\\DemoService.cs",
+              "ViewState": "AgIAAC4AAABA/////38pwEcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T09:42:29.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExternalService.cs",
+              "DocumentMoniker": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\Api\\Services\\ExternalService.cs",
+              "RelativeDocumentMoniker": "Api\\Services\\ExternalService.cs",
+              "ToolTip": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\Api\\Services\\ExternalService.cs",
+              "RelativeToolTip": "Api\\Services\\ExternalService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T09:41:15.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\Api\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "Api\\Controllers\\ProductsController.cs",
               "ToolTip": "C:\\Users\\Abdulloh\\Desktop\\GitHub\\Caching-ASP.NET\\Api\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Api\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAawEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAADAZmZmZuYkwF8AAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T12:35:52.655Z",
               "EditorCaption": ""
